@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18.0",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^5.1",
+        "jquery": "^3.3.1",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.10",
+        "popper.js": "^1.12",
+        "vue": "^2.5.16"
+    },
+    "dependencies": {
+        "ajv": "^6.5.2",
+        "bulma-accordion": "^2.0.0",
+        "bulma-extensions": "^2.2.1",
+        "chart.js": "^2.7.2",
+        "chartjs": "^0.3.24",
+        "flatpickr": "^4.5.1",
+        "izimodal": "^1.5.1",
+        "jquery-word-and-character-counter-plugin": "^2.5.1",
+        "laravel-echo": "^1.4.0",
+        "moment": "^2.22.2",
+        "node-rsa": "^1.0.0",
+        "pusher-js": "^4.2.2",
+        "split-sms": "^0.1.7",
+        "sweetalert": "^2.1.0",
+        "uuid": "^3.3.2",
+        "vue-chartjs": "^3.3.2",
+        "vue-flatpickr-component": "^7.0.4",
+        "vue-paystack": "^1.0.1",
+        "vue-table-component": "^1.9.1",
+        "vue-tables-2": "^1.4.63",
+        "vuex": "^3.0.1"
+    }
+}

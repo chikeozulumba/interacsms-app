@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+.navWrapper {
+    background: #efad00;
+}
+
+.fa-file-signature {
+    color: #efad00;
+}
+
+.navbar-item img {
+    max-height: 2.75rem !important;
+    height: 60px;
+}
+
+.navbar-burger {
+    margin: .5rem .75rem;
+}
+
+.nav-container {
+    background: transparent !important;
+}
+
+a.navbar-item {
+    color: whitesmoke !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover,
+input:active {
+    background-color: #fafafa;
+    color: #efad00 !important;
+}
+
+body {
+    font-family: 'Cabin', BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus {
+    border-color: #efad00 !important;
+    box-shadow: 0 0 0 0.125em rgba(239, 173, 0, 0.42) !important;
+}
+
+#hero-home {
+    background: url('http://res.cloudinary.com/impeachng/image/upload/q_37/v1533578999/interacsms/cell-home.jpg');
+    /* background: url('/img/home/cell-home.jpg'); */
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero-home .title {
+    color: whitesmoke;
+    font-family: 'Changa One', cursive;
+    word-spacing: 4px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    /* margin-bottom: 20vh */
+}
+
+#hero-home .subtitle {
+    color: whitesmoke;
+    line-height: 20px;
+    text-justify: newspaper;
+    font-family: 'Cabin', BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    /* position: absolute; */
+    z-index: 999;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.info-subtitle {
+    font-size: 16px;
+    margin: 20px 0;
+    font-family: 'Cabin', BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.hero-property {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+    grid-row-gap: 3vh;
+}
+
+.title {
+    margin: 10px 10px 20px;
+}
+
+#gs-btn {
+    /* width: 100%; */
+    padding: 1.5rem !important;
+    border-bottom: 5px solid #eead00 !important;
+    border-bottom-right-radius: 20px !important;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.card .title {
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 200;
+}
+
+.content p {
+    text-align: justify;
+}
+
+p {
+    font-family: 'Cabin', BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.hero-property>div {}
+
+#cta {
+    /* margin-bottom: 0px !important; */
+}
+
+@media screen and (max-width: 500px) {
+    #hero-home .title {
+        color: whitesmoke;
+        word-spacing: 2px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        /* margin-bottom: 10vh; */
+    }
+    #hero-home .subtitle {
+        color: whitesmoke;
+        line-height: 1.5;
+        /* margin-top: 20px; */
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    #hero-home {
+        background: url('/img/home/cell-home.jpg');
+        background-position: 40% 90%;
+        background-size: cover;
+    }
+    h1.has-text-centered {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #gs-btn {
+        font-size: 0.6rem !important;
+        font-weight: 400 !important;
+    }
+    span.title-name {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hero-home {
+        background: url('/img/home/cell-home.jpg');
+        background-position: 40% 60%;
+        background-size: cover;
+    }
+}
+
+.features .card {
+    border-radius: 10px;
+}
+
+#appWrapper {
+    background-color: #eead00 !important;
+    min-height: 100vh !important;
+}
+
+
+/* ACCORDION */
+
+
+/* Styles for page */
+
+.container {
+    /* width: 70%; */
+    margin: 150px auto;
+}
+
+body {
+    color: #4B4B4B;
+    /* font-family: sans-serif; */
+}
+
+body a {
+    cursor: pointer;
+    /* color: #4B4B4B; */
+    text-decoration: none;
+}
+
+
+/*
+body section {
+    margin-bottom: 90px;
+} */
+
+body section h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+body section p,
+body section a {
+    text-align: left;
+    /* letter-spacing: 3px; */
+}
+
+span {
+    letter-spacing: 0px;
+}
+
+p {
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* Styles for Accordion */
+
+.toggle:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+.toggle .toggle-title {
+    position: relative;
+    display: block;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 6px;
+}
+
+.toggle .toggle-title h3 {
+    font-size: 20px;
+    margin: 0px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.toggle .toggle-inner {
+    padding: 7px 25px 10px 25px;
+    display: none;
+    margin: -7px 0 6px;
+}
+
+.toggle .toggle-inner div {
+    max-width: 100%;
+}
+
+.toggle .toggle-title .title-name {
+    display: block;
+    padding: 25px 25px 14px;
+}
+
+.toggle .toggle-title a i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.toggle .toggle-title i {
+    position: absolute;
+    background: url("/img/icons/plus.svg") no-repeat;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+    margin: 24px;
+    right: 0;
+}
+
+.toggle .toggle-title.active i {
+    background: url("/img/icons/substract.svg") 0px 0px no-repeat;
+}
+
+.faq {
+    padding-top: 3rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.cta-btn {
+    width: 100%;
+    padding: 1.9rem !important;
+    border-bottom: 5px solid #eead00 !important;
+    border-bottom-right-radius: 20px !important;
+    text-transform: uppercase;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.footer {
+    padding: 1.5rem 1.5rem 0rem !important;
+}
+
+.is-divider-vertical::after,
+.is-divider::after {
+    background: inherit !important;
+}

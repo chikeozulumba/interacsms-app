@@ -1,0 +1,92 @@
+<template>
+    <div class="box">
+        <div class="tabs is-centered is-toggle is-toggle-rounded">
+            <ul>
+                <li :class="[ view === 'contacts' ? 'is-active' : '']">
+                <a @click="view = 'contacts'">
+                    <span class="icon is-small"><i class="far fa-address-book" aria-hidden="true"></i></span>
+                    <span>Contacts</span>
+                </a>
+                </li>
+                <li :class="[ view === 'groups' ? 'is-active' : '']">
+                <a @click="view = 'groups'">
+                    <span class="icon is-small"><i class="fas fa-users" aria-hidden="true"></i></span>
+                    <span>Groups</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div v-show="view == 'contacts'" class="content">
+                <v-server-table :url="contactsData" :columns="columns" :options="options"></v-server-table>
+        </div>
+    </div>
+</template>
+
+<script>
+import {ServerTable, Event} from 'vue-tables-2';
+import Vue from 'vue';
+Vue.use(ServerTable);
+export default {
+    data () {
+        return {
+            contactsData: route('view.contacts.data'),
+            view: 'contacts',
+            columns: ['FIRST NAME', 'LAST NAME', 'PHONE NUMBER 1', 'PHONE NUMBER 2', 'LOCATION', 'DATE ADDED'],
+            options: {
+                perPage:10,
+                perPageValues:[10],
+                requestAdapter(data) {
+                    // console.log(data);
+                    return {
+                        sort: data.orderBy ? data.orderBy : 'first_name',
+                        direction: data.ascending ? 'asc' : 'desc'
+                    }
+                },
+                responseAdapter({data}) {
+                    // console.log(data)
+                    return {
+                        data,
+                        count: data.length
+                    }
+                },
+                filterable: false,
+                templates: {
+                    created_at(h, row) {
+                    return this.formatDate(row.created_at);
+                    },
+                    updated_at(h, row) {
+                    return this.formatDate(row.updated_at);
+                    },
+                    pushed_at(h, row) {
+                    return this.formatDate(row.pushed_at);
+                    }
+                }
+            }
+        }
+    }
+}
+</script>
+
+<style>
+.tabs li.is-active a {
+    color: #f0ad00;
+}
+.tabs span {
+    font-family: 'Asap' !important;
+    /* font-size: 12px; */
+    text-transform: uppercase;
+}
+.tabs.is-toggle li.is-active a {
+    background-color: #f0ad00;
+    border-color: #f0ad00;
+    color: #fff;
+    z-index: 1;
+}
+.VueTables__heading {
+    font-size: 12px;
+    color: grey;
+}
+.VueTables__table > tbody > tr >td {
+    font-size: 12px;
+}
+</style>
