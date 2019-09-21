@@ -54,9 +54,6 @@ class CreateLogsTable extends Migration
                     ->references('id')
                     ->on('users')
                     ->onDelete('cascade');
-        });
-
-        Schema::table('logs', function (Blueprint $table) {
             $table->foreign('message_id')
                     ->references('id')
                     ->on('messages')

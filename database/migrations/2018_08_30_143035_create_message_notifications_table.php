@@ -32,8 +32,6 @@ class CreateMessageNotificationsTable extends Migration
                     ->references('id')
                     ->on('users')
                     ->onDelete('cascade');
-        });
-        Schema::table('message_notifications', function (Blueprint $table) {
             $table->foreign('message_id')
                     ->references('id')
                     ->on('messages')
@@ -48,6 +46,8 @@ class CreateMessageNotificationsTable extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('notifications');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
