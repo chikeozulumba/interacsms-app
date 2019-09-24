@@ -182,7 +182,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <a href="https://interacsms.com" target="_blank">
-                                                                        <img src="http://interacsms.com/img/interacsms.png" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Cabin, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;"
+                                                                        <img src="http://interacsms.herokuapp.com/img/interacsms.png" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Cabin, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;"
                                                                             class="img-max">
                                                                     </a>
                                                                 </td>
